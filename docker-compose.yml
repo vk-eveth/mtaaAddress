@@ -1,0 +1,47 @@
+services:
+  frontend:
+    build:
+      context: ./mtaaAddress-frontend
+    container_name: mtaaAddress_frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./mtaaAddress-frontend:/app
+      - /app/node_modules
+    stdin_open: true
+    tty: true
+    networks:
+      - mtaaNetwork
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./mtaaAddress-backend
+    container_name: mtaaAddress_backend
+    volumes:
+      - ./mtaaAddress-backend:/app
+    ports:
+      - "8001:8000"
+    networks:
+      - mtaaNetwork
+    #command: python manage.py runserver 0.0.0.0:8000
+
+  db:
+    image: postgres:15
+    container_name: mtaaAddress_db
+    environment:
+      POSTGRES_DB: mtaadb
+      POSTGRES_USER: mtaauser
+      POSTGRES_PASSWORD: mtaapassword
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - mtaaNetwork
+    restart: unless-stopped
+
+networks:
+  mtaaNetwork:
+
+volumes:
+  pgdata:

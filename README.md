@@ -42,31 +42,12 @@ This project focuses on empowering communities in Tanzania and similar regions b
 1. Clone the repository:
     ```bash
     git clone git@github.com:vk-eveth/mtaaAddress.git
-    cd mtaaAddress/backend
+    cd mtaaAddress
     ```
 
-2. Create and activate a Python virtual environment:
+2. Run the whole system with just single command
     ```bash
-    python3 -m venv venv
-    source venv/bin/activate  # Linux/macOS
-    venv\Scripts\activate     # Windows
-    ```
-
-3. Install backend dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4. Configure PostgreSQL database settings in `settings.py`.
-
-5. Apply migrations:
-    ```bash
-    python manage.py migrate
-    ```
-
-6. Run the backend server:
-    ```bash
-    python manage.py runserver
+    docker compose up -d
     ```
 
 ### Frontend Setup

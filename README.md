@@ -93,6 +93,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Contact
 
 Developed by Victor Gervas Mmanda  
-Email: evethvictory@gmail.com  
+Email: victor@evethlabstech.com  
 Phone & Whatsapp: +255626802297
 GitHub: [vk-eveth](https://github.com/vk-eveth)

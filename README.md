@@ -95,4 +95,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 Developed by Victor Gervas Mmanda  
 Email: victor@evethlabstech.com  
 Phone & Whatsapp: +255626802297
-GitHub: [vk-eveth](https://github.com/vk-eveth)
+Portifolio: www.victor.evethlabstech.com
+Website: www.evethlabstech.com
+GitHub: https://github.com/vk-eveth/mtaaAddress
